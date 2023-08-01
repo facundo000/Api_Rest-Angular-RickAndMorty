@@ -1,0 +1,44 @@
+.cont {
+
+    &__list {
+        display: none;
+    }
+    
+}
+
+@media(max-width:767px) {
+    .cont {
+        display: flex;
+        justify-content: space-between !important;
+        width: 100%;
+
+        
+        &__list--activo {
+            display: block;
+            text-align: center;
+
+            pointer-events: auto;
+        }
+    
+        &__ul {
+            margin-top: 16px;
+        }
+    
+        &__li {
+            list-style-type: none;
+            margin-left: -30px;
+            padding: 10px;
+    
+            &:hover {
+                cursor: pointer;
+                transition: 0.7s;
+                background-color: #11750C;
+            }
+    
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}

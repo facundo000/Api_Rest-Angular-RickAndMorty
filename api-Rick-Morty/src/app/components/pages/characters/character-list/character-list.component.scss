@@ -1,0 +1,36 @@
+/* LISTAS DE underline */
+.name {
+    color: #029108;
+    text-decoration: underline;
+}
+
+.card-img-top {
+    opacity: 0.7;
+}
+.card-img-top:hover {
+    opacity: 1;
+}
+
+.noResult {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.no-hidden {
+    background-color: white;
+    color: #029108;
+    font-weight: bold;
+    border-radius: 40%;
+}
+
+@media(max-width:767px){
+    .row {
+        padding-top: 201px;
+    }
+
+    .card-img-top{
+            opacity: 1;
+        }
+}

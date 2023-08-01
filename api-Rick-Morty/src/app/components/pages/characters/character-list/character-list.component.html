@@ -1,0 +1,30 @@
+<div class="row" infinite-scroll (scrolled)="onScrollDown()">
+    <div class="col-xs-12 col-md-3" *ngFor="let character of characters">
+      <div class="card">
+       <app-character [character]="character" class="card-img-top"></app-character>
+        <div class="card-inner">
+          <div class="header">
+            <a [routerLink]="['/character-details', character.id]"></a>
+
+            <h4><span class="name">{{ character.name }}</span></h4>
+
+            <h4 class="text-muted">Gender: {{ character.gender }}</h4>
+            
+            <h4 class="text-muted">Origin: {{ character.origin.name }}</h4>
+
+            <small class="text-muted">Created: {{ character.created | date: 'dd/MM/yyyy' }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound" *ngIf="characters.length <= 0"
+    >
+      <p class="noResult">No results.......</p>
+    </div>
+  </div>
+  <button 
+  [ngClass]="'no-hidden'"
+  *ngIf="showGoUpButton"
+  (click)="onScrollTop()">
+    Go up
+  </button>

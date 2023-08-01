@@ -1,0 +1,28 @@
+@media(max-width:767px) {
+    .component {
+        width: 100%;
+    }
+}
+
+
+.nav-logo {    
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.nav-home-svg {
+    padding-right: 80px !important;
+
+    svg{
+        margin-right: 10px;
+        margin-bottom: 4px;
+    }
+    .i-home {
+        margin-left: 10px;
+    }
+
+}
+
+.seeker {
+    padding-top: 10px;
+}
